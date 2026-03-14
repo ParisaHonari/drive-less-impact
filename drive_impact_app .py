@@ -5,6 +5,7 @@ import requests
 st.set_page_config(page_title="Drive Less Impact Calculator", layout="centered")
 
 st.title("🚗 Drive Less Impact Calculator")
+st.caption("Built by Parisa Honari | Data, AI & Sustainability")
 
 st.write("See the environmental impact of your driving — and how much you save by skipping a trip.")
 
