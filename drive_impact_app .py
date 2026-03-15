@@ -13,37 +13,42 @@ st.markdown("""
     background-color: #F5F7FA;
 }
 
-/* Main container */
+/* Main layout width */
 .block-container {
-    padding-top: 2rem;
     max-width: 800px;
+    padding-top: 2rem;
 }
 
-/* Dropdown */
-div[data-baseweb="select"] {
+/* Labels for fields */
+label {
+    color: #1F2937 !important;
+    font-weight: 600;
+}
+
+/* Dropdown styling */
+div[data-baseweb="select"] > div {
     background-color: white !important;
     border-radius: 8px !important;
-    color: black !important;
 }
 
 /* Dropdown text */
 div[data-baseweb="select"] span {
-    color: black !important;
+    color: #1F2937 !important;
 }
 
 /* Number input */
 input {
     background-color: white !important;
-    color: black !important;
+    color: #1F2937 !important;
 }
 
-/* Calculate button */
+/* Button */
 .stButton > button {
     background-color: #2E7D32;
     color: white;
-    font-weight: 600;
     border-radius: 8px;
     padding: 10px 18px;
+    font-weight: 600;
     border: none;
 }
 
