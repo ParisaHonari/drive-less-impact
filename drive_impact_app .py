@@ -8,22 +8,30 @@ st.set_page_config(page_title="Drive Less Impact Calculator", layout="centered")
 st.markdown("""
 <style>
 
-/* App background */
+/* Page background */
 .stApp {
-    background-color: #F7F9FB;
+    background-color: #F5F7FA;
 }
 
-/* Title styling */
-h1 {
-    color: #1F2937;
+/* Main container */
+.block-container {
+    padding-top: 2rem;
+    max-width: 800px;
 }
 
-/* Input boxes */
-div[data-baseweb="select"] > div {
+/* Dropdown */
+div[data-baseweb="select"] {
     background-color: white !important;
     border-radius: 8px !important;
+    color: black !important;
 }
 
+/* Dropdown text */
+div[data-baseweb="select"] span {
+    color: black !important;
+}
+
+/* Number input */
 input {
     background-color: white !important;
     color: black !important;
@@ -33,15 +41,14 @@ input {
 .stButton > button {
     background-color: #2E7D32;
     color: white;
-    border-radius: 8px;
-    padding: 10px 20px;
     font-weight: 600;
+    border-radius: 8px;
+    padding: 10px 18px;
     border: none;
 }
 
 .stButton > button:hover {
     background-color: #1B5E20;
-    color: white;
 }
 
 /* Metric cards */
@@ -49,17 +56,11 @@ input {
     background-color: white;
     border-radius: 10px;
     padding: 15px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
-}
-
-/* Success box */
-.stAlert {
-    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
 </style>
 """, unsafe_allow_html=True)
-
 st.title("🚗 Drive Less Impact Calculator")
 st.caption("Built by Parisa Honari | Data, AI & Sustainability")
 
