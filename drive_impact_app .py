@@ -10,41 +10,30 @@ st.markdown("""
 
 /* Page background */
 .stApp {
-    background-color: #F5F7FA;
+    background-color: #F7F9FB;
 }
 
-/* Main layout width */
-.block-container {
-    max-width: 800px;
-    padding-top: 2rem;
-}
-
-/* Labels for fields */
-label {
-    color: #1F2937 !important;
+/* Make labels visible */
+label, .stSelectbox label, .stNumberInput label {
+    color: #1f2937 !important;
     font-weight: 600;
 }
 
-/* Dropdown styling */
+/* Inputs */
+input, textarea {
+    background-color: white !important;
+    color: #111827 !important;
+}
+
+/* Dropdown */
 div[data-baseweb="select"] > div {
     background-color: white !important;
-    border-radius: 8px !important;
-}
-
-/* Dropdown text */
-div[data-baseweb="select"] span {
-    color: #1F2937 !important;
-}
-
-/* Number input */
-input {
-    background-color: white !important;
-    color: #1F2937 !important;
+    color: #111827 !important;
 }
 
 /* Button */
 .stButton > button {
-    background-color: #2E7D32;
+    background-color: #2e7d32;
     color: white;
     border-radius: 8px;
     padding: 10px 18px;
@@ -53,15 +42,7 @@ input {
 }
 
 .stButton > button:hover {
-    background-color: #1B5E20;
-}
-
-/* Metric cards */
-[data-testid="metric-container"] {
-    background-color: white;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    background-color: #1b5e20;
 }
 
 </style>
