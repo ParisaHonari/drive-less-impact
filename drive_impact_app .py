@@ -5,17 +5,60 @@ import requests
 APP_URL = "https://parisahnr.com/drive-less-impact-calculator"
 
 st.set_page_config(page_title="Drive Less Impact Calculator", layout="centered")
-st.markdown(
-    """
-    <style>
-    .stApp {
-        background-color: white;
-        color: black;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+st.markdown("""
+<style>
+
+/* App background */
+.stApp {
+    background-color: #F7F9FB;
+}
+
+/* Title styling */
+h1 {
+    color: #1F2937;
+}
+
+/* Input boxes */
+div[data-baseweb="select"] > div {
+    background-color: white !important;
+    border-radius: 8px !important;
+}
+
+input {
+    background-color: white !important;
+    color: black !important;
+}
+
+/* Calculate button */
+.stButton > button {
+    background-color: #2E7D32;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 600;
+    border: none;
+}
+
+.stButton > button:hover {
+    background-color: #1B5E20;
+    color: white;
+}
+
+/* Metric cards */
+[data-testid="metric-container"] {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Success box */
+.stAlert {
+    border-radius: 10px;
+}
+
+</style>
+""", unsafe_allow_html=True)
 
 st.title("🚗 Drive Less Impact Calculator")
 st.caption("Built by Parisa Honari | Data, AI & Sustainability")
