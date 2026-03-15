@@ -5,6 +5,17 @@ import requests
 APP_URL = "https://parisahnr.com/drive-less-impact-calculator"
 
 st.set_page_config(page_title="Drive Less Impact Calculator", layout="centered")
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-color: white;
+        color: black;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 st.title("🚗 Drive Less Impact Calculator")
 st.caption("Built by Parisa Honari | Data, AI & Sustainability")
