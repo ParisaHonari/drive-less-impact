@@ -8,82 +8,59 @@ st.set_page_config(page_title="Drive Less Impact Calculator", layout="centered")
 st.markdown("""
 <style>
 
-/* Background */
+/* Page background */
 .stApp {
     background-color: #F7F9FB;
 }
 
-/* Headings */
-h1, h2, h3 {
-    color: #1f2937 !important;
-}
-
-/* Labels for fields */
+/* Labels */
 label {
-    color: #1f2937 !important;
+    color: #1F2937 !important;
     font-weight: 600;
 }
 
-/* Regular text */
-p, span, div {
-    color: #374151;
-}
-
-/* Input fields */
-input, textarea {
+/* Inputs */
+input {
     background-color: white !important;
     color: #111827 !important;
 }
 
-/* Dropdown */
+/* Dropdown field */
 div[data-baseweb="select"] > div {
     background-color: white !important;
     color: #111827 !important;
+    border-radius: 8px;
+}
+
+/* Dropdown menu items */
+ul {
+    background-color: white !important;
+}
+
+li {
+    color: #111827 !important;
+}
+
+/* Button */
+.stButton > button {
+    background: linear-gradient(135deg,#4CAF50,#2E7D32);
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+}
+
+.stButton > button:hover {
+    background: linear-gradient(135deg,#66BB6A,#388E3C);
 }
 
 /* Metric cards */
 [data-testid="metric-container"] {
     background-color: white;
-    color: #111827 !important;
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
-
-/* Metric numbers */
-[data-testid="stMetricValue"] {
-    color: #111827 !important;
-}
-
-/* Metric labels */
-[data-testid="stMetricLabel"] {
-    color: #374151 !important;
-}
-
-/* Calculate button */
-.stButton > button {
-    background-color: #2e7d32;
-    color: white;
-    border-radius: 8px;
-    padding: 10px 18px;
-    font-weight: 600;
-    border: none;
-}
-
-.stButton > button:hover {
-    background-color: #1b5e20;
-}
-
-/* LinkedIn text box */
-textarea {
-    border-radius: 8px;
-}
-
-/* Success message */
-[data-testid="stAlert"] {
-    background-color: #E6F4EA;
-    color: #1f2937 !important;
-    border-radius: 8px;
 }
 
 </style>
